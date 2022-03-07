@@ -175,7 +175,7 @@ body[data-layout-mode=dark] .navbar .navbar-nav .nav-link.active {
   display: inline-block;
 }
 .navbar .navbar-nav .nav-link {
-  color: #183b56;
+  color: #99c14f;
   font-size: 13px;
   background-color: transparent;
   padding: 28px 25px;
@@ -184,9 +184,23 @@ body[data-layout-mode=dark] .navbar .navbar-nav .nav-link.active {
   position: relative;
   font-weight: 700;
 }
-.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:active, .navbar .navbar-nav .nav-link.active {
+
+.nav-sticky .nav-link {
+  color: #99c14f !important;
+}
+
+.nav-sticky .nav-link.active {
   color: #0076a3 !important;
 }
+
+:not(.nav-sticky).nav-link {
+  color: #183b56 !important;
+}
+
+:not(.nav-sticky).nav-link.active {
+  color: #ffffff !important;
+}
+
 .navbar .navbar-brand {
   color: #0076a3;
   font-weight: 600;
@@ -261,7 +275,7 @@ body[data-layout-mode=dark] .navbar .navbar-nav .nav-link.active {
   box-shadow: 0px 3px 10px 0px rgba(24, 59, 86, 0.2);
 }
 .nav-sticky .nav-item .nav-link {
-  color: #183b56 !important;
+  color: #99c14f !important;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -360,6 +374,10 @@ body[data-layout-mode=dark] .navbar-brand .logo-light {
 
 .bg-primary {
   background-color: #0076a3 !important;
+}
+
+.bg-darkgrey {
+  background-color: #4c4c4c !important;
 }
 
 .text-secondary {
@@ -606,7 +624,7 @@ hr {
 }
 
 .bg-gradiant {
-  background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);
+  background: #4c4c4c;
   border: none !important;
   color: #ffffff !important;
 }
@@ -623,7 +641,7 @@ hr {
 }
 
 .bg-overlay-gradiant {
-  background: linear-gradient(80deg, #377d8f 0%, #0a4157 100%);
+  background: linear-gradient(80deg, rgb(172, 217, 90) 0%, rgb(186, 222, 74) 100%);
   position: absolute;
   top: 0;
   right: 0;
@@ -664,7 +682,7 @@ hr {
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden !important;
-  color: #183b56;
+  color: #4c4c4c;
 }
 body.modal-open {
   padding-right: 0px !important;
@@ -772,7 +790,7 @@ html {
 }
 
 .text-primary {
-  color: #0076a3 !important;
+  color: #a5c734 !important;
 }
 
 .border-primary {
@@ -785,11 +803,12 @@ html {
 }
 
 .btn-primary {
-  background: #0076a3 !important;
+  background: #4c4c4c !important;
   color: #ffffff;
-  border-color: #0076a3 !important;
+  border-color: #000 !important;
   border: 1px solid;
 }
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.focus, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary .open > .dropdown-toggle.btn-primary {
   background: #00678f;
@@ -1967,7 +1986,7 @@ body[data-layout-mode=dark] .home-6 .tns-outer .tns-controls button[data-control
   transition: all 0.3s;
 }
 .service .service-box a {
-  color: #183b56;
+  color: #4c4c4c;
   transition: all 0.3s;
 }
 .service .service-box .service-icon i {
@@ -1979,7 +1998,7 @@ body[data-layout-mode=dark] .home-6 .tns-outer .tns-controls button[data-control
   transition: all 0.3s;
 }
 .service .service-box:hover a {
-  color: #0076a3;
+  color: #b2cb3c;
 }
 
 .home2-service {
@@ -2117,10 +2136,10 @@ body[data-layout-mode=dark] .app-slider {
   transition: all 0.5s;
 }
 .pricing .price-item .price-up-box {
-  background-color: rgba(0, 118, 163, 0.2);
+  background-color: #acd95a;
 }
 .pricing .price-item .price-up-box.active {
-  background-color: #183b56;
+  background-color: #acd95a;
 }
 .pricing .price-item .price-down-box button {
   background-color: #f8f9fc;
