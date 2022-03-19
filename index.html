@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-light" id="navbar">
         <div class="container-fluid">
 
-            <a class="navbar-brand logo text-uppercase" href="/">
+            <a class="navbar-brand logo text-uppercase" href="#home">
                 <img src="images/logo-light.png" class="logo-light" alt="" height="30">
                 <img src="images/logo-dark.png" class="logo-dark" alt="" height="30">
             </a>
@@ -213,15 +213,13 @@
                                     500 MB für Uploads
                                 </li>
                             </ul>
-                            <a href="https://app.kiwi.pm/register/?plan=basic" class="btn btn-sm btn-primary mt-3"><i class="mdi mdi-check-all me-2"></i>Auswählen</a>
+                            <button class="btn btn-sm btn-primary mt-5" disabled="disabled" onclick="window.open('https://app.kiwi.pm/register/?plan=basic')"><i class="mdi mdi-check-all me-2"></i>Nicht verfügbar</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 ">
                     <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
-                        <div class="topbar-header bg-darkgrey py-2 text-center">
-                            <h6 class="mb-0 text-white fw-normal">Empfohlen</h6>
-                        </div>
+                        
                         <div class="price-up-box p-4">
                             <div class="badge bg-darkgrey fw-normal f-14">Startup</div>
                             <div class="price-tag mt-2">
@@ -269,7 +267,7 @@
                                     10 GB für Uploads
                                 </li>
                             </ul>
-                            <a href="https://app.kiwi.pm/register/?plan=startup" class="btn btn-sm btn-primary mt-3"><i class="mdi mdi-check-all me-2"></i>Auswählen</a>
+                            <button class="btn btn-sm btn-primary mt-5" disabled="disabled" onclick="window.open('https://app.kiwi.pm/register/?plan=startup')"><i class="mdi mdi-check-all me-2"></i>Nicht verfügbar</button>
                         </div>
                     </div>
                 </div>
@@ -288,42 +286,62 @@
 
                         <div class="price-down-box p-4">
                             <ul class="list-unstyled ">
-                                <ul class="list-unstyled ">
-                                    <li>
-                                        <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
-                                        <i class="mdi mdi-infinity"></i> Projekte
-                                    </li>
-                                    <li class="mt-2">
-                                        <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
-                                        <i class="mdi mdi-infinity"></i> Kategorien
-                                    </li>
-                                    <li class="mt-2">
-                                        <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
-                                        <i class="mdi mdi-infinity"></i> Gäste
-                                    </li>
-                                    <li class="mt-2">
-                                        <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
-                                        Eigene Domain
-                                    </li>
-                                    <li class="mt-2">
-                                        <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
-                                        Öffentliche Roadmap
-                                    </li>
-                                    <li class="mt-2">
-                                        <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
-                                        Öffentliches Changelog
-                                    </li>
-                                    <li class="mt-2">
-                                        <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
-                                        Ticket Support Priority
-                                    </li>
-                                    <li class="mt-2">
-                                        <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
-                                        500 GB für Uploads
-                                    </li>
-                                </ul>
-                            <a href="https://app.kiwi.pm/register/?plan=enterprise" class="btn btn-sm btn-primary mt-3"><i class="mdi mdi-check-all me-2"></i>Auswählen</a>
+                                <li>
+                                    <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
+                                    <i class="mdi mdi-infinity"></i> Projekte
+                                </li>
+                                <li class="mt-2">
+                                    <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
+                                    <i class="mdi mdi-infinity"></i> Kategorien
+                                </li>
+                                <li class="mt-2">
+                                    <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
+                                    <i class="mdi mdi-infinity"></i> Gäste
+                                </li>
+                                <li class="mt-2">
+                                    <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
+                                    Eigene Domain
+                                </li>
+                                <li class="mt-2">
+                                    <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
+                                    Öffentliche Roadmap
+                                </li>
+                                <li class="mt-2">
+                                    <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
+                                    Öffentliches Changelog
+                                </li>
+                                <li class="mt-2">
+                                    <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
+                                    Ticket Support Priority
+                                </li>
+                                <li class="mt-2">
+                                    <i class="mdi mdi-check-circle f-20 align-middle me-2 text-primary"></i>
+                                    500 GB für Uploads
+                                </li>
+                            </ul>
+                            <button class="btn btn-sm btn-primary mt-5" disabled="disabled" onclick="window.open('https://app.kiwi.pm/register/?plan=enterprise')"><i class="mdi mdi-check-all me-2"></i>Nicht verfügbar</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center pt-5">
+                <div class="col-12">
+                    <div class="price-item shadow-sm overflow-hidden mt-4 mt-lg-0">
+                        <div class="topbar-header bg-darkgrey py-2 text-center">
+                            <h6 class="mb-0 text-white fw-normal">verfügbar bis April 2023</h6>
+                        </div>
+                        <div class="price-up-box p-4">
+                            <div class="badge bg-darkgrey fw-normal f-14">Beta Teilnahme</div>
+                            <div class="price-tag mt-2">
+                                <h2 class="text-dark mb-0 f-40"><sup class="f-22 fw-normal">&euro;</sup>0<sup
+                                        class="f-16 fw-normal"> /Monat</sup></h2>
+                            </div>
+                            <p class="text-dark mb-1">kostenfrei während der Beta-Phase</p>
+                            <p class="text-dark mb-0">Alle Features des Enterprise-Paketes (keine Zahlungsinformationen erforderlich)</p>
+                            <a href="https://app.kiwi.pm/register/?plan=beta" class="btn btn-sm btn-primary mt-3"><i class="mdi mdi-check-all me-2"></i>Auswählen</a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
